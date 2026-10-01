@@ -1,9 +1,10 @@
 const repeatString = function(string, num) {
 
+    // Invalid value for num, stop here
     if (num < 0) return "ERROR";
 
-    // If the given string is an empty string return it
-    // No need to use the for loop in this case
+    // If given string is empty return it
+    // No need to use a loop in this case
     if (string === "") return "";
 
     // Start with an empty string
