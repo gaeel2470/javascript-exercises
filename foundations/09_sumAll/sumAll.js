@@ -3,15 +3,10 @@ const sumAll = function(a, b) {
     // Avoid invalid inputs
     if (typeof a !== "number" || typeof b !== "number" || 
         a < 0 || b < 0 || a !== Math.floor(a) || b !== Math.floor(b)) return "ERROR";
-
-    let arr = [a, b].sort((a, b) => a - b);
-    let result = 0;
-    for (arr[0]; arr[0] <= arr[1]; arr[0]++)
-    {
-        result += arr[0];
-    }
-
-    return result;
+    
+    // Get the sum of all integers between a and b inclusive using the sum formula
+    // Count of integers * (a + b) / 2
+    return (Math.abs(a - b) + 1) * (a + b) / 2;
 };
 
 // Do not edit below this line
