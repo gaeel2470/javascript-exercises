@@ -1,4 +1,10 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(fahrenheit) {
+
+    // Transform fahrenheit to celsius using the formula
+    const celsius = (fahrenheit - 32) * (5/9);
+
+    // Round to one decimal point
+    return Math.round(celsius * 10) / 10;
 };
 
 const convertToFahrenheit = function(celsius) {
